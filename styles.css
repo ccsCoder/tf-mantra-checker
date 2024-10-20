@@ -1,0 +1,49 @@
+html {
+  height: 100svh;
+  width: 100svw;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans Devanagari", sans-serif;
+  background-color: black;
+  color: white;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  font-size: 3rem;
+  gap: 10%;
+}
+
+.listening {
+  position: absolute;
+  bottom: 2px;
+}
+
+#start-chanting {
+  border-radius: 10px;
+  background-color: transparent;
+  border: none;
+  filter: invert(1);
+}
+
+#start-chanting:hover,
+#start-chanting:focus,
+#start-chanting:active {
+  filter: drop-shadow(0 0 0.75rem white);
+}
+
+.visible {
+  visibility: visible;
+}
+
+.invisible {
+  visibility: hidden;
+}
