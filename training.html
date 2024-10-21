@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Phrase Recognition Demo</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tensorflow/4.15.0/tf.min.js"></script>
+    <style>
+      body {
+        font-family: system-ui, sans-serif;
+        max-width: 800px;
+        margin: 2rem auto;
+        padding: 0 1rem;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
+      button,
+      input {
+        padding: 0.5rem;
+        font-size: 1rem;
+      }
+      #status {
+        margin-top: 1rem;
+        padding: 1rem;
+        border-radius: 4px;
+      }
+      .success {
+        background: #e0ffe0;
+      }
+      .error {
+        background: #ffe0e0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Phrase Recognition Demo</h1>
+      <div>
+        <label for="targetPhrase">Target phrase to recognize:</label>
+        <input type="text" id="targetPhrase" value="om namah shivaay" />
+      </div>
+      <div>
+        <label for="testPhrase">Test phrase:</label>
+        <input type="text" id="testPhrase" />
+      </div>
+      <button onclick="trainModel()">Train Model</button>
+      <button onclick="testPhrase()">Test Phrase</button>
+      <div id="status"></div>
+    </div>
+
+    <script src="training.js"></script>
+  </body>
+</html>

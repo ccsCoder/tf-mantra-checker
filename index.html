@@ -8,14 +8,15 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
-    <script src="index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tensorflow/4.15.0/tf.min.js"></script>
+    <script src="training.js"></script>
+
     <title>Mantra Teacher</title>
   </head>
   <body>
     <main>
-      <p>ॐ नमः शिवाय</p>
+      <p id="mantra">ॐ नमः शिवाय</p>
       <img class="listening invisible" src="./wave.gif" alt="listening" />
-      <script></script>
       <button id="start-chanting" aria-label="Start chanting">
         <img
           src="https://img.icons8.com/ios/50/000000/microphone.png"
@@ -23,5 +24,6 @@
         />
       </button>
     </main>
+    <script src="index.js"></script>
   </body>
 </html>

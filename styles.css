@@ -1,6 +1,7 @@
 html {
+  width: 100vw;
   height: 100svh;
-  width: 100svw;
+  overflow: hidden;
 }
 
 body {
@@ -9,6 +10,7 @@ body {
   font-family: "Noto Sans Devanagari", sans-serif;
   background-color: black;
   color: white;
+  overflow: hidden;
 }
 
 main {
@@ -19,7 +21,15 @@ main {
   height: 100vh;
   text-align: center;
   font-size: 3rem;
-  gap: 10%;
+  overflow: hidden;
+}
+
+.success {
+  color: greenyellow;
+}
+
+.failure {
+  color: tomato;
 }
 
 .listening {
